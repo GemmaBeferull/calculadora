@@ -1,0 +1,43 @@
+.calculator {
+    background-color: grey;
+    width: 20vw;
+    height: 50vh;
+}
+
+.screen {
+    background-color: aliceblue;
+    width: 80%;
+    height: 18%;
+    margin: auto;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    height: 80%;
+}
+
+.numbersContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.operatorsContainer {
+    display: grid;
+}
+
+.operator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
