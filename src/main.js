@@ -14,13 +14,14 @@ function application() {
     };
     
     const calculatorButton = document.querySelectorAll(".calculatorButton");
+    let clickedButtonsValues = [];
+
     for(let i = 0; i < calculatorButton.length; i++){
         calculatorButton[i].addEventListener('click', function(event){ 
-            let numberValue = event.currentTarget.value;
+            clickedButtonsValues += event.currentTarget.value;
+            console.log(clickedButtonsValues)
         }); 
     }
-
-    
     
     return {
         sum,
