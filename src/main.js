@@ -1,17 +1,26 @@
 function application() {
-    function sum (a, b) {
-        return a + b
+    function sum (numberOne, numberTwo) {
+        return numberOne + numberTwo;
     };
 
-    function subtract (a, b) {
-        return a - b
+    function subtract(numberOne, numberTwo) {
+        return numberOne- numberTwo;
     };
-    function multiply (a, b) {
-        return a * b
+    function multiply(numberOne, numberTwo) {
+        return numberOne* numberTwo;
     };
-    function divide (a, b) {
-        return a / b
+    function divide(numberOne, numberTwo) {
+        return numberOne/ numberTwo;
     };
+    
+    const calculatorButton = document.querySelectorAll(".calculatorButton");
+    for(let i = 0; i < calculatorButton.length; i++){
+        calculatorButton[i].addEventListener('click', function(event){ 
+            let numberValue = event.currentTarget.value;
+        }); 
+    }
+
+    
     
     return {
         sum,
