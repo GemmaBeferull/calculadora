@@ -14,15 +14,23 @@ function application() {
     };
     
     const calculatorButton = document.querySelectorAll(".calculatorButton");
-    let clickedButtonsValues = [];
+    let clickedButtonsValues = "";
 
     for(let i = 0; i < calculatorButton.length; i++){
         calculatorButton[i].addEventListener('click', function(event){ 
             clickedButtonsValues += event.currentTarget.value;
             console.log(clickedButtonsValues)
+            let hola = eval(clickedButtonsValues);
+            console.log(hola)
         }); 
     }
     
+    // function createVariablesFromClickedValues() {
+    //   let hola = eval(clickedButtonsValues);
+    //   console.log(hola)
+    // }
+    // createVariablesFromClickedValues()
+
     return {
         sum,
         subtract,
